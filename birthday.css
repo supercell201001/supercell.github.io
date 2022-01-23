@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow: visible;
+}
+
+#happybday {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ----- AUDIO CONTROLS ----- */
+#btn_playPause{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+    width:200px;
+    height:150px;
+    font-size: 40px;
+    cursor:pointer;
+    outline:none;
+}
+
+
+
+/* nth child is the nth letter in happy birthday */
+#happybday path:nth-child(1){
+    stroke-dasharray: 557.4px;
+    stroke-dashoffset: 557.4px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#happybday path:nth-child(2){
+    stroke-dasharray: 358.9px;
+    stroke-dashoffset: 358.9px;
+    animation: line-anim 2s ease forwards 0.6s;
+
+}
+
+#happybday path:nth-child(3){
+    stroke-dasharray: 418.2px;
+    stroke-dashoffset: 418.2px;
+    animation: line-anim 2s ease forwards 0.9s;
+
+}
+
+#happybday path:nth-child(4){
+    stroke-dasharray: 418.2px;
+    stroke-dashoffset: 418.2px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#happybday path:nth-child(5){
+    stroke-dasharray: 468.9px;
+    stroke-dashoffset: 468.9px;
+    animation: line-anim 2s ease forwards 1.5s;
+
+}
+
+#happybday path:nth-child(6){
+    stroke-dasharray: 564.7px;
+    stroke-dashoffset: 564.7px;
+    animation: line-anim 2s ease forwards 1.8s;
+
+}
+
+#happybday path:nth-child(7){
+    stroke-dasharray: 263.8px;
+    stroke-dashoffset: 263.8px;
+    animation: line-anim 2s ease forwards 2.1s;
+
+}
+
+#happybday path:nth-child(8){
+    stroke-dasharray: 237.5px;
+    stroke-dashoffset: 237.5px;
+    animation: line-anim 2s ease forwards 2.4s;
+
+}
+
+#happybday path:nth-child(9){
+    stroke-dasharray: 277.9px;
+    stroke-dashoffset: 277.9px;
+    animation: line-anim 2s ease forwards 2.7s;
+
+}
+
+#happybday path:nth-child(10){
+    stroke-dasharray: 436.9px;
+    stroke-dashoffset: 436.9px;
+    animation: line-anim 2s ease forwards 3s;
+
+}
+
+#happybday path:nth-child(11){
+    stroke-dasharray: 452.9px;
+    stroke-dashoffset: 452.9px;
+    animation: line-anim 2s ease forwards 3.3s;
+
+}
+
+#happybday path:nth-child(12){
+    stroke-dasharray: 358.9px;
+    stroke-dashoffset: 358.9px;
+    animation: line-anim 2s ease forwards 3.6s;
+
+}
+
+#happybday path:nth-child(13){
+    stroke-dasharray: 468.9px;
+    stroke-dashoffset: 468.9px;
+    animation: line-anim 2s ease forwards 3.9s;
+
+}
+
+#happybday path:nth-child(14){
+    stroke-dasharray: 128.5px;
+    stroke-dashoffset: 128.5px;
+    animation: line-anim 2s ease forwards 4.2s;
+
+}
+
+#happybday path:nth-child(15){
+    stroke-dasharray: 237.5px;
+    stroke-dashoffset: 237.5px;
+    animation: line-anim 2s ease forwards 4.5s;
+
+}
+
+#happybday path:nth-child(16){
+    stroke-dasharray: 263.8px;
+    stroke-dashoffset: 263.8px;
+    animation: line-anim 4s ease forwards 5s;
+
+}
+
+#happybday path:nth-child(17){
+    stroke-dasharray: 479.9px;
+    stroke-dashoffset: 479.9px;
+    animation: line-anim 4s ease forwards 5.5s;
+
+}
+
+#happybday path:nth-child(18){
+    stroke-dasharray: 358.9px;
+    stroke-dashoffset: 358.9px;
+    animation: line-anim 4s ease forwards 6s;
+
+}
+
+#happybday path:nth-child(19){
+    stroke-dasharray: 247.6px;
+    stroke-dashoffset: 247.6px;
+    animation: line-anim 4s ease forwards 6.5s;
+
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+.images{
+    width: 100%;
+    height: 110%;
+    position: relative;
+    z-index: -1;
+    top: -10%;
+}
+
+.image-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+#first {
+    top: 300px; 
+    z-index: 0; 
+}
+
+.blur {
+    width: 100%;
+    margin-left: -10%;
+    height: 250px;
+    background-color: #030000;
+    position: absolute;
+    bottom: -180px;
+    filter: blur(40px);
+    z-index: 999;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color: #030000;
+    z-index: 0;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content img {
+    height: 90%;
+    width: auto;
+}
+
+.one {
+    top: -10px;
+}
+.two {
+    top: -50px;
+}
+.three {
+    top: 20px;
+}
+.four {
+    top: -20px;
+}
+
+.content-image-wrapper h4 {
+    font-size: 1.8em;
+    position: relative;
+    top: -30px;
+    opacity: 0.6;
+}
+
+.text {
+    padding-top: 100px;
+    width: 60%;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* FIREWORKS */  
+
+
+body {
+    cursor: crosshair;
+  }
+
+canvas{
+    position: absolute;
+    z-index: -1;
+    display:block;
+}
